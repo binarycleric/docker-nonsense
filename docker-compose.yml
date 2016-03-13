@@ -12,4 +12,9 @@ services:
     image: memcached:1.4
     ports:
       - 11211
-    command: [-n 256, -p 11211] 
+    command: [-n 256, -p 11211]
+
+  redis:
+    image: redis:2.8 
+    ports:
+      - 6379
